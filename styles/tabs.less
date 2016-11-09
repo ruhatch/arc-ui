@@ -7,17 +7,20 @@
 
 .tab-bar {
   background-color: @tab-bar-background-color;
-  border-bottom: 1px solid @base-border-color;
+  border-bottom: 3px solid @tab-background-color-active;
+  padding-top: 3px;
 
   .tab {
-    color: @text-color;
+    color: @text-color-dark;
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
     border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
     &.active {
-      color: @text-color-selected;
+      color: @text-color-highlight; //#5C616C;
       background-color: @tab-background-color-active;
     }
 

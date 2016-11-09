@@ -20,3 +20,47 @@ atom-pane {
     border-right: none;
   }
 }
+
+.scrollbars-visible-always {
+  /deep/::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /deep/::-webkit-scrollbar-track {
+    background: @scrollbar-background-color;
+  }
+
+  /deep/::-webkit-scrollbar-corner {
+    background: @scrollbar-background-color;
+  }
+
+  /deep/::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 3px solid @scrollbar-background-color;
+    background: @scrollbar-color;
+    background-clip: content-box;
+
+    &:active,
+    &:hover {
+      border-width: 1px;
+    }
+  }
+
+  atom-text-editor,
+  atom-pane-container,
+  atom-panel-container.bottom {
+    /deep/::-webkit-scrollbar-track {
+      background: @background-color-highlight;
+    }
+
+    /deep/::-webkit-scrollbar-corner {
+      background: @background-color-highlight;
+    }
+
+    /deep/::-webkit-scrollbar-thumb {
+      border-color: @background-color-highlight;
+      background: @scrollbar-color;
+    }
+  }
+}

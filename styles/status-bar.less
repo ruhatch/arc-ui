@@ -8,7 +8,29 @@
 
 .status-bar {
   font-size: @font-size;
-  color: @text-color;
+  color: @text-color-dark;
   border-top: 1px solid @base-border-color;
   background-color: @tree-view-background-color;
+
+  a {
+    color: @text-color-dark;
+    &:hover {
+      color: @text-color-dark-highlight;
+    }
+  }
+
+  .cursor-position a {
+    color: @text-color-dark;
+    &:hover {
+      color: @text-color-dark-highlight;
+    }
+  }
+
+  linter-bottom-tab {
+    color: @text-color-dark;
+    &.active {
+      color: @text-color-dark-highlight;
+    }
+  }
+
 }

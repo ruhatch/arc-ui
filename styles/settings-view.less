@@ -1,0 +1,52 @@
+.settings-view {
+
+  .config-menu {
+    background: transparent;
+    border-color: darken(@background-color-highlight, 8%);
+  }
+
+  select.form-control {
+    border-color: darken(@background-color-highlight, 3%);
+    background-color: darken(@background-color-highlight, 3%);
+    &:hover,
+    &:focus {
+      background-color: darken(@background-color-highlight, 10%);
+    }
+  }
+
+  .package-card {
+    background-color: darken(@background-color-highlight, 3%);
+    border-color: darken(@background-color-highlight, 3%);
+    border-radius: 2px;
+    &:hover, &.disabled {
+      background-color: darken(@background-color-highlight, 10%);
+    }
+  }
+
+  .btn {
+    color: lighten(@text-color, 6%);
+    background-color: lighten(@base-background-color, 10%);
+    &:hover,
+    &:focus {
+      color: @text-color-highlight;
+      background-color: darken(@base-background-color, 2%);
+    }
+    &:active {
+      color: fade(@text-color-selected, 66%);
+      background-color: darken(@button-background-color, 2%);
+    }
+    &.selected {
+      color: @text-color-selected;
+      background-color: @button-background-color-selected;
+    }
+    &:focus,
+    &:focus:active {
+      outline: none;
+    }
+  }
+
+  .section {
+    border-color: darken(@background-color-highlight, 8%);
+  }
+
+}

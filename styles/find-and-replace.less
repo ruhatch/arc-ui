@@ -8,3 +8,24 @@
 .find-and-replace {
   border-top: 1px solid @base-border-color;
 }
+
+.find-and-replace, .project-find {
+
+  .options-label {
+    color: @text-color-dark;
+    .options {
+      color: @text-color-dark-highlight;
+    }
+  }
+
+  .description {
+    color: @text-color-dark;
+    .subtle-info-message {
+      color: @text-color-dark-subtle;
+      .highlight {
+        color: @text-color-dark-highlight;
+        background-color: lighten(@base-background-color, 20%);
+      }
+    }
+  }
+}
