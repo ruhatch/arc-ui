@@ -15,7 +15,24 @@
   background-color: @tree-view-background-color;
   padding-top: 6px;
 
-  .list-item.selected {
-    color: @text-color-selected;
+  .list-item {
+    color: @text-color-dark;
+    &.status          { color: @text-color; }
+    &.status-added    { color: @text-color-success; } // green
+    &.status-ignored  { color: @text-color-subtle; }  // faded
+    &.status-modified { color: @text-color-warning; } // orange
+    &.status-removed  { color: @text-color-error; }   // red
+    &.status-renamed  { color: @text-color-info; }    // blue
+    &.selected        { color: @text-color-selected; }
   }
+
+  /*.list-tree .selected {
+    color: #FF0000;
+    .list-item {
+      color: #00FF00;
+    }
+  }*/
+  /*.list-item.selected {
+    color: @text-color-selected;
+  }*/
 }
