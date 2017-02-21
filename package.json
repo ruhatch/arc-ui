@@ -1,7 +1,7 @@
 {
   "name": "arc-ui",
   "theme": "ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An adaptable, minimalist UI theme for Atom, based on Arc GTK theme",
   "keywords": [
     "ui",
